@@ -26,7 +26,7 @@ class Emloyee {
         this.name = name;
         this.shifts = shifts;
     }
-    getShcedule=()=> `${this.name} works on ${this.shifts}`;
+    getSchedule=()=> `${this.name} works on ${this.shifts}`;
 }
 
 
@@ -41,6 +41,7 @@ class Emloyee {
 */
 
 //CODE HERE
+const empOne = new empOne("Jess", "weekdays");
 
 /*
     Call the `getSchedule` method on the
@@ -48,7 +49,7 @@ class Emloyee {
 */
 
 //CODE HERE
-
+empOne.getSchedule()
 
 /*
     Make a copy of the empOne object
@@ -63,7 +64,7 @@ class Emloyee {
 */
 
 //CODE HERE
-
+const empTwo = new empOne('Nick')
 
 
 //////////////////PROBLEM 2////////////////////

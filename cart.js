@@ -35,8 +35,8 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce((cart, summedPrice) => cart + summedPrice.price, 0,);
-// console.log(summedPrice)
+const summedPrice = cart.reduce((cart, summedPrice) => cart + summedPrice.price, 0,);
+console.log(summedPrice)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -83,7 +83,7 @@ console.log(calcFinalPrice(28.50, .06, .05))
 
 /*
     TEXT ANSWER HERE
-    My customer object will have four keys
+    My customer object will have four keys:
 
     name: name of customer for order identification
     email: email of customer for marketing
