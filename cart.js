@@ -57,9 +57,9 @@ const cart = [
 //CODE HERE
 
 const calcFinalPrice = (cartTotal, couponValue, tax) => {
-    cartTotal - couponValue * tax;
+    return cartTotal + tax - couponValue;
 };
-console.log(calcFinalPrice(28.50, .15, .06))
+console.log(calcFinalPrice(28.50, .06, .05))
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -83,6 +83,12 @@ console.log(calcFinalPrice(28.50, .15, .06))
 
 /*
     TEXT ANSWER HERE
+    My customer object will have four keys
+
+    name: name of customer for order identification
+    email: email of customer for marketing
+    phone: phone number of customer to let them know when their order is ready 
+    address: address of customer for delivery
 
 */
 
@@ -92,3 +98,11 @@ console.log(calcFinalPrice(28.50, .15, .06))
 */
 
 //CODE HERE
+const customers = [
+    {
+        name: 'Alfred Goosewiggins',
+        email: 'at&g@me.com',
+        phone: '406-555-5555',
+        address: '817 Spartan Drive Missoula, MT 59801'
+    }
+]
